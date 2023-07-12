@@ -1,8 +1,7 @@
 const express = require("express");
 const app = express();
 const PORT = 5000;
-app.set("view engine", "pug");
-app.set("views", "./views");
+
 
 // Set up middleware for verifying working hours
 const authMiddleware = (req, res, next) => {
